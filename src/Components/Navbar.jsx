@@ -1,12 +1,17 @@
 import Logo from "../assets/Navbar/Logo.png";
+import MvLogo from "../assets/Navbar/MvLogo.png";
 const Navbar = () => {
   return (
     <>
       <div className="w-full m-auto">
         <div className="bar-backgrund h- flex justify-center">
-          <p className="text-center m-2">
-            This page is included in a free SaaS Website Kit. View the complete
-            Kit&nbsp;
+          <div className="text-center m-2 hidden md:inline">
+            <p className="">
+              This page is included in a free SaaS Website Kit.
+            </p>
+          </div>
+          <div className="text-center mt-2">
+            View the complete Kit&nbsp;
             <svg
               width="20"
               height="20"
@@ -20,11 +25,48 @@ const Navbar = () => {
                 fill="black"
               />
             </svg>
-          </p>
+          </div>
         </div>
-        <div>
-          <nav className="bg-black">
-            <img src={Logo} alt="Logo" className="w-" />
+
+        <div className="bg-black">
+          <nav className=" flex text-center justify-between py-4">
+            
+            <div>
+              <img src={Logo} alt="Logo" className="hidden md:inline" />
+             <img
+              src={MvLogo}
+              alt="logo for mobile view"
+              className="md:hidden"
+            /> 
+            </div>
+            <div className="text-center text-white">
+              <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-center mt-5 mr-4 md:hidden"
+            >
+              <path
+                d="M17.8125 10.5C17.8125 10.7486 17.7137 10.9871 17.5379 11.1629C17.3621 11.3387 17.1236 11.4375 16.875 11.4375H3.125C2.87636 11.4375 2.6379 11.3387 2.46209 11.1629C2.28627 10.9871 2.1875 10.7486 2.1875 10.5C2.1875 10.2514 2.28627 10.0129 2.46209 9.83709C2.6379 9.66127 2.87636 9.5625 3.125 9.5625H16.875C17.1236 9.5625 17.3621 9.66127 17.5379 9.83709C17.7137 10.0129 17.8125 10.2514 17.8125 10.5ZM3.125 6.4375H16.875C17.1236 6.4375 17.3621 6.33873 17.5379 6.16291C17.7137 5.9871 17.8125 5.74864 17.8125 5.5C17.8125 5.25136 17.7137 5.0129 17.5379 4.83709C17.3621 4.66127 17.1236 4.5625 16.875 4.5625H3.125C2.87636 4.5625 2.6379 4.66127 2.46209 4.83709C2.28627 5.0129 2.1875 5.25136 2.1875 5.5C2.1875 5.74864 2.28627 5.9871 2.46209 6.16291C2.6379 6.33873 2.87636 6.4375 3.125 6.4375ZM16.875 14.5625H3.125C2.87636 14.5625 2.6379 14.6613 2.46209 14.8371C2.28627 15.0129 2.1875 15.2514 2.1875 15.5C2.1875 15.7486 2.28627 15.9871 2.46209 16.1629C2.6379 16.3387 2.87636 16.4375 3.125 16.4375H16.875C17.1236 16.4375 17.3621 16.3387 17.5379 16.1629C17.7137 15.9871 17.8125 15.7486 17.8125 15.5C17.8125 15.2514 17.7137 15.0129 17.5379 14.8371C17.3621 14.6613 17.1236 14.5625 16.875 14.5625Z"
+                fill="white"
+              />
+            </svg> 
+            <div className="hidden md:inline ">
+                <ul className="flex gap-3">
+                <li className="mt-3 mr-4">Customers</li>
+                <li className="mt-3 mr-4">Features</li>
+                <li className="mt-3 mr-4">About</li>
+                <li className="mt-3 mr-4">Updates</li>
+                <li className="mt-3 mr-4">Help</li>
+                <button className="px-4 py-2 rounded-2xl mt-2 mr-4 bg-white text-black">
+                  Get For Free</button>
+              </ul>
+            </div>                            
+            </div>
+            
+            
           </nav>
         </div>
       </div>
