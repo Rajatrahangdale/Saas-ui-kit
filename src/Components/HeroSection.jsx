@@ -21,7 +21,7 @@ const HeroSection = () => {
             </svg></span></p>
             </div>
             <div>
-                <h1 className="text-white font-[DMsans] text-[125px]">
+                <h1 className="drop-shadow-lg text-center leading-[125px] -tracking-[5px] text-white text-[] font-bold text-[125px]">
                 One Task <br />at a Time
                 </h1>
             </div>
