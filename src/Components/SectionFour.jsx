@@ -1,6 +1,10 @@
-// import React from "react";
+import { useState } from "react";
 import AppImg from "../assets/SectionFour/AppImg.png";
 const SectionFour = () => {
+  const [accordionOpen, setAccordionOpen] = useState(true);
+  const [queTwo, setQueTwo] = useState(true);
+  const [queThree, setQueThree] = useState(true);
+  const [queFour, setQueFour] = useState(true);
   return (
     <>
       <div className="SecFour-Background text-white">
@@ -22,25 +26,117 @@ const SectionFour = () => {
             Frequently asked questions
           </h1>
           <div className="mt-10">
-            <div className="flex justify-between mx-5 lg:mx-[400px] border-b border-gray-600 p-4">
-              <h2>How does the pricing work for teams</h2>
-              <h2>+</h2>
+            {/* Q1 */}
+            <div className="border-b border-gray-600 p-4">
+              <div
+                onClick={() => {
+                  setAccordionOpen(!accordionOpen);
+                }}
+                className="group flex justify-between mx-5 lg:mx-[400px] "
+              >
+                <h2>How does the pricing work for teams</h2>
+                {!accordionOpen ? (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    -
+                  </h2>
+                ) : (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    +
+                  </h2>
+                )}
+              </div>
+              <div className="ml-6">
+                <p className={!accordionOpen ? "font-thin block" : "hidden"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  ullam quidem delectus ad cumque placeat fuga nam, eaque rerum?
+                  Ratione maxime,
+                </p>
+              </div>
             </div>
-            <div className="flex justify-between mx-5 lg:mx-[400px] border-b border-gray-600 p-4">
-              <h2>How does the pricing work for teams</h2>
-              <h2>+</h2>
+            {/* Q2 */}
+            <div className="border-b border-gray-600 p-4">
+              <div
+                onClick={() => {
+                  setQueTwo(!queTwo);
+                }}
+                className="group flex justify-between mx-5 lg:mx-[400px] "
+              >
+                <h2>How does the pricing work for teams</h2>
+                {!queTwo ? (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    -
+                  </h2>
+                ) : (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    +
+                  </h2>
+                )}
+              </div>
+              <div className="ml-6">
+                <p className={!queTwo ? "font-thin block" : "hidden"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  ullam quidem delectus ad cumque placeat fuga nam, eaque rerum?
+                  Ratione maxime,
+                </p>
+              </div>
             </div>
-            <div className="flex justify-between mx-5 lg:mx-[400px] border-b border-gray-600 p-4">
-              <h2>How does the pricing work for teams</h2>
-              <h2>+</h2>
+            {/* Q3 */}
+            <div className="border-b border-gray-600 p-4">
+              <div
+                onClick={() => {
+                  setQueThree(!queThree);
+                }}
+                className="group flex justify-between mx-5 lg:mx-[400px] "
+              >
+                <h2>How does the pricing work for teams</h2>
+                {!queThree ? (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    -
+                  </h2>
+                ) : (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    +
+                  </h2>
+                )}
+              </div>
+              <div className="ml-6">
+                <p className={!queThree ? "font-thin block" : "hidden"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  ullam quidem delectus ad cumque placeat fuga nam, eaque rerum?
+                  Ratione maxime,
+                </p>
+              </div>
             </div>
-            <div className="flex justify-between mx-5 lg:mx-[400px] border-b border-gray-600 p-4">
-              <h2>How does the pricing work for teams</h2>
-              <h2>+</h2>
+            {/* Q4 */}
+            <div className="border-b border-gray-600 p-4">
+              <div
+                onClick={() => {
+                  setQueFour(!queFour);
+                }}
+                className="group flex justify-between mx-5 lg:mx-[400px] "
+              >
+                <h2>How does the pricing work for teams</h2>
+                {!queFour ? (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    -
+                  </h2>
+                ) : (
+                  <h2 className="text-lg transition-all duration-300 ease-in-out group-active:rotate-90">
+                    +
+                  </h2>
+                )}
+              </div>
+              <div className="ml-6">
+                <p className={!queFour ? "font-thin block" : "hidden"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  ullam quidem delectus ad cumque placeat fuga nam, eaque rerum?
+                  Ratione maxime,
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="h-[40px]"></div>
+        <div className="md:h-[100px]"></div>
       </div>
     </>
   );

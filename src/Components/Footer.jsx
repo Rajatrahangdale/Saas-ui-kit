@@ -9,12 +9,12 @@ import Youtube from "../assets/Footer/YouTube.png";
 const Footer = () => {
   return (
     <>
-      <div className="bg-black text-center text-[#808080] ">
-        <div className="flex md:justify-between flex-col ml-5">
+      <div className="bg-black text-center text-[#808080] border-t border-[#808080]">
+        <div className="flex md:justify-between md:flex-row flex-col ml-5 my-4 mx-2 gap-2">
           <p className="text-sm">
             @ 2024 Your Company, Inc. All rights reserved
           </p>
-          <div className="flex justify-center gap-4 mt-2 ">
+          <div className="flex justify-center gap-2">
             <img src={Twitter} alt="" />
             <img src={Insta} alt="" />
             <img src={Pintrest} alt="" />
@@ -23,6 +23,7 @@ const Footer = () => {
             <img src={Youtube} alt="" />
           </div>
         </div>
+        <div className="h-5"></div>
       </div>
     </>
   );

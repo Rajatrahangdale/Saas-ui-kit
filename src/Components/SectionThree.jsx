@@ -25,8 +25,8 @@ const SectionThree = () => {
             Trusted by the world’s most innovative teams
           </p>
         </div>
-        <div className="flex justify-around flex-wrap row-span-2 mt-16">
-          <img src={Acme} alt="" className="md:w-3/6 lg:w-auto w-[100px]" />
+        <div className="flex justify-around gap-2 flex-wrap row-span-3 mx-10 md:mx-48 lg:mx-10 mt-8 lg:mt-10">
+          <img src={Acme} alt="" className="lg:w-auto w-[100px]" />
           <img src={Quantum} alt="" className="w-[100px]" />
           <img src={Echo} alt="" className="w-[100px]" />
           <img src={Celestia} alt="" className="w-[100px]" />
@@ -34,10 +34,10 @@ const SectionThree = () => {
           <img src={Apex} alt="" className="w-[100px]" />
         </div>
         <div className="mt-10 text-center text-white">
-          <h2 className="lg:text-4xl md:text-3xl text-2xl lg:mb-5">
+          <h2 className="lg:text-5xl md:text-4xl text-3xl lg:mb-5 font-semibold md:font-bold">
             Everything you need
           </h2>
-          <p className="mt-5 mx-[40px] lg:my-[1px] md:mx-[200px] lg:mx-[460px]">
+          <p className="mt-2 mx-[40px] lg:my-[1px] md:mx-[200px] lg:mx-[460px]">
             Enjoy customizable lists, team work tools, and smart tracking all in
             one place. Set tasks, get reminders, and see your progress simply
             and quickly.
@@ -45,8 +45,8 @@ const SectionThree = () => {
         </div>
         <div className="mb-10">
           <div className="flex flex-col lg:flex-row gap-4 justify-center mt-10">
-            <div className="w-[300px] h-[220px] my-auto mx-auto lg:mx-5 rounded-lg  bg-[#0D0D0D] text-center text-white">
-              <img src={Leaf} alt="" className="m-auto p-2" />
+            <div className="w-[300px] h-[220px] mx-auto lg:mx-5 rounded-lg  bg-[#0D0D0D] text-center text-white">
+              <img src={Leaf} alt="" className="m-auto p-2 pt-6" />
               <p className="font-bold text-lg p-2">Integration ecosystem</p>
               <p className="text-sm pb-2 px-6 ">
                 Enhance your productivity by connecting with your favorite
@@ -62,7 +62,7 @@ const SectionThree = () => {
               </p>
             </div>
             <div className="w-[300px] h-[220px] mx-auto lg:mx-5 rounded-lg  bg-[#0D0D0D] text-center text-white">
-              <img src={Leaf} alt="" className="m-auto p-2" />
+              <img src={Leaf} alt="" className="m-auto p-2 pt-6" />
               <p className="font-bold text-lg p-2">Integration ecosystem</p>
               <p className="text-sm pb-2 px-6 ">
                 Enhance your productivity by connecting with your favorite
